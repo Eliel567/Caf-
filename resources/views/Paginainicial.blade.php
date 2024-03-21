@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetCaféSaoLeolpoldo</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f7eed2;
+        }
+
+        header {
+            background-color: #1c1c1c;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            color: white;
+            font-size: 24px;
+            font-family: Arial, sans-serif;
+        }
+
+        .second-bar {
+            background-color: #603814;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+
+        .menu-button {
+            font-family: Arial, sans-serif;
+            color: #fffaeb;
+            background-color: transparent;
+            border: 2px solid #fffaeb;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        .menu-button:hover {
+            background-color: #fffaeb;
+            color: #603814;
+        }
+
+        .content-box {
+            background-color: #1c1c1c;
+            padding: 20px;
+            margin: 110px 0;
+            max-width: 400px;
+            border-radius: 10px;
+            float: left;
+            margin-left: 150px;
+        }
+
+        .employee-content-box {
+            background-color: #1c1c1c;
+            padding: 20px;
+            margin: 110px 0;
+            max-width: 400px;
+            border-radius: 10px;
+            float: right;
+            margin-right: 150px;
+        }
+
+        .food-image-preview,
+        .employee-image-preview {
+            margin-top: 150px;
+        }
+
+        input[type="file"] {
+            display: none;
+        }
+
+        label {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #fffaeb;
+            color: #603814;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        label:hover {
+            background-color: #603814;
+            color: #fffaeb;
+        }
+
+        /*titulo*/
+        .employee-title {
+            color: #1c1c1c;
+            font-family: Arial, sans-serif;
+            font-size: 20px;
+            text-align: center;
+            margin-top: 20px;
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(150%, 10%);
+        }
+
+        .special-title {
+            color: #1c1c1c;
+            font-family: Arial, sans-serif;
+            font-size: 20px;
+            text-align: center;
+            margin-top: 20px;
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-290%, 10%);
+        }
+
+        #logocafe {
+            position: fixed;
+            top: -20px;
+            left: 455px;
+            width: 120px;
+            height: auto;
+            z-index: 9999;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>PetCaféSaoLeolpoldo</h1>
+    </header>
+    <div class="second-bar">
+        <button class="menu-button left">Alteração de cardápio</button>
+        <button class="menu-button right">Pet/Adoção</button>
+    </div>
+    <main>
+        <h2 class="special-title">Especial do Dia!!!</h2> <!-- Novo título adicionado aqui -->
+        <div class="content-box">
+            <input type="file" accept="image/*" id="food-image" onchange="previewImage('food-image', 'food-image-preview')">
+            <label for="food-image">Adicionar imagem de comida</label>
+            <div class="food-image-preview" id="food-image-preview"></div>
+        </div>
+        <h2 class="employee-title">Funcionário do Mês!</h2>
+        <div class="employee-content-box">
+            <input type="file" accept="image/*" id="employee-image" onchange="previewImage('employee-image', 'employee-image-preview')">
+            <label for="employee-image">Adicionar imagem de funcionário</label>
+            <div class="employee-image-preview" id="employee-image-preview"></div>
+        </div>
+    </main>
+    <script>
+        function previewImage(inputId, previewId) {
+            const input = document.getElementById(inputId);
+            const preview = document.getElementById(previewId);
+
+            while (preview.firstChild) {
+                preview.removeChild(preview.firstChild);
+            }
+
+            const file = input.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    const img = document.createElement('img');
+                    img.src = e.target.result;
+                    img.style.maxWidth = '100%';
+                    img.style.height = 'auto';
+                    preview.appendChild(img);
+                }
+                reader.readAsDataURL(file);
+            }
+        }
+    </script>
+    <img id="logocafe" src="c:\Users\teylor\Downloads\logotipocafe.png" alt="logocafe">
+</body>
+</html>
+
+
+
+

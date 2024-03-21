@@ -3,5 +3,11 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('paginalogin.blade.php');
+    return view('paginalogin');
 });
+
+// routes/web.php
+
+
+
+

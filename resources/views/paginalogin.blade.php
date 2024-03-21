@@ -97,7 +97,7 @@
         <h1>PetCaféSaoLeopoldo</h1>
         <h2>Login</h2>
         <form action="login.php" method="POST">
-            <input type="text" name="username" placeholder="Usuário" required>
+            <input type="text" name="cpf" placeholder="CPF" required>
             <input type="password" name="password" placeholder="Senha" required>
             <input type="submit" value="Entrar">
         </form>
@@ -110,7 +110,7 @@
     <div class="container" id="cadastro" style="display: none;">
         <h2>Cadastro</h2>
         <form action="cadastro.php" method="POST">
-            <input type="text" name="nome" placeholder="Nome" required>
+            <input type="text" name="cpf" placeholder="CPF" required>
             <input type="text" name="email" placeholder="E-mail" required>
             <input type="text" name="username" placeholder="Usuário" required>
             <input type="password" name="password" placeholder="Senha" required>

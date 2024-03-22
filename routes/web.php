@@ -6,7 +6,10 @@ Route::get('/', function () {
     return view('paginalogin');
 });
 
-// routes/web.php
+Route::get('/home', function () {
+    return view('home');
+})->name('home');
+
 
 
 

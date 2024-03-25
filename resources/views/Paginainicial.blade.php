@@ -120,7 +120,7 @@
         #logocafe {
             position: fixed;
             top: -20px;
-            left: 455px;
+            left: 435px;
             width: 120px;
             height: auto;
             z-index: 9999;
@@ -172,7 +172,7 @@
             }
         }
     </script>
-    <img id="logocafe" src="c:\Users\teylor\Downloads\logotipocafe.png" alt="logocafe">
+    <img id="logocafe" src="/img/logopetcafe.png" alt="logocafe">
 </body>
 </html>
 

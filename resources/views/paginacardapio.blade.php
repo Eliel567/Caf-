@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -82,7 +82,7 @@
 
 <div class="menu">
     <div class="menu-item">
-        <img src="cafe-expresso-02-e1568084083582-810x456.jpg" alt="Café Espresso" width="400" height="440">
+        <img src="/img/cafe-expresso.jpg" alt="Café Espresso" width="400" height="440">
         <h2>Café Espresso</h2>
         <p>Um café expresso feito com grãos selecionados e moídos na hora. Intenso e encorpado, perfeito para começar o dia.</p>
         <div class="price">R$ 15,00 <button class="edit-button" onclick="editPrice(this)">Editar</button></div>
@@ -93,7 +93,7 @@
     </div>
 
     <div class="menu-item">
-        <img src="Destaque-cafe-Latte.jpg" alt="Café Latte" width="400" height="440">
+        <img src="/img/cafe-latte.jpg" alt="Café Latte" width="400" height="440">
         <h2>Café Latte</h2>
         <p>Uma combinação perfeita de café expresso e leite vaporizado, finalizada com uma camada de espuma de leite cremosa.</p>
         <div class="price">R$ 15,00 <button class="edit-button" onclick="editPrice(this)">Editar</button></div>
@@ -104,7 +104,7 @@
     </div>
 
     <div class="menu-item">
-        <img src="Design-sem-nome-8.png" alt="Café Cappuccino" width="400" height="440">
+        <img src="/img/cafe-cappuccino.png" alt="Café Cappuccino" width="400" height="440">
         <h2>Café Cappuccino</h2>
         <p>Uma deliciosa mistura de café expresso, leite vaporizado e espuma de leite, polvilhada com uma pitada de cacau em pó.</p>
         <div class="price">R$ 15,00 <button class="edit-button" onclick="editPrice(this)">Editar</button></div>
@@ -115,7 +115,7 @@
     </div>
 
     <div class="menu-item">
-        <img src="cafe-mocha.jpg" alt="Café Mocha" width="400" height="440">
+        <img src="/img/cafe-mocha.jpg" alt="Café Mocha" width="400" height="440">
         <h2>Café Mocha</h2>
         <p>Um café encorpado combinado com chocolate quente cremoso, finalizado com uma camada de chantilly e raspas de chocolate.</p>
         <div class="price">R$ 15,00 <button class="edit-button" onclick="editPrice(this)">Editar</button></div>

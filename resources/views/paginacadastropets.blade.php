@@ -93,7 +93,7 @@
 <body>
 <h1>Cadastro de Pets</h1>
 
-<img class="logo" src="logopetcafe-removebg-preview.png" alt="logo empresa"
+<img class="logo" src="/img/logopetcafe.png" alt="logo empresa"
    width="150" height="140">
 
 <form id="animalForm">
@@ -184,15 +184,6 @@
         row.remove();
     }
 
-    function getImageUrl(type) {
-        if (type === 'gato') {
-            var randomCat = Math.floor(Math.random() * 10) + 1; // Gera um número aleatório entre 1 e 10
-            return 'https://cataas.com/cat/says/RandomCat' + randomCat; // API pública para imagens aleatórias de gatos
-        } else if (type === 'cachorro') {
-            var randomDog = Math.floor(Math.random() * 100) + 1; // Gera um número aleatório entre 1 e 100
-            return 'https://placedog.net/500/280?id=' + randomDog; // API pública para imagens aleatórias de cachorros
-        }
-    }
 </script>
 
 </body>

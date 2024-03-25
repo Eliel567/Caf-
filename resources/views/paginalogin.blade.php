@@ -84,7 +84,7 @@
         .logo {
             position: absolute;
             top: 10px;
-            left: 10px;
+            left: -6px;
             width: 100px; /* Ajuste o tamanho conforme necessário */
             height: auto;
         }
@@ -93,7 +93,7 @@
 </head>
 <body>
     <div class="container">
-        <img src="c:\Users\teylor\Downloads\logotipocafe.png" alt="Logo da Pet Café" class="logo">
+        <img src="/img/logopetcafe.png" alt="Logo da Pet Café" class="logo">
         <h1>PetCaféSaoLeopoldo</h1>
         <h2>Login</h2>
         <form action="login.php" method="POST">
